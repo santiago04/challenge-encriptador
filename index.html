@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Desencriptador</title>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="contenedor">
+            <img src="img/logo.svg" alt="Logo alura">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="contenedor grid-main">
+            <div class="main-derecha">
+                <form id="form">
+                    <textarea class="textarea-mensaje" placeholder="Ingrese el texto aqui"></textarea>
+
+                    <div class="warning-flex">
+                        <img src="img/warning.svg" alt="warning">
+                        <p class="warning-text">Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="boton-flex">
+                        <button type="submit" id="encriptar" class="boton btn-encriptar boton-desactivado" disabled>Encriptar</button>
+                        <button type="submit" id="desencriptar" class="boton btn-desencriptar boton-desactivado" disabled>Desencriptar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="main-izquierda">
+                <div class="area-informacion flex-center">
+                   <div class="informacion">
+                        <div class="sin-informacion">
+                            <img class="img-informacion" src="img/ilustracion.svg" alt="no hay contenido">
+                            <div class="texto-informacion">
+                                <h3 class="heading-informacion">Ningún mensaje fue encontrado</h3>
+                                <p class="mensaje-informacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                            </div>
+                        </div>
+                        <div class="mensaje-final">
+                            <textarea class="mensaje-resultado"></textarea>
+                        </div>
+                   </div>
+                   <button type="submit" id="copiar" class="boton btn-copiar">Copiar</button>        
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p class="texto-footer">Desarrollado por <a target="_blank" href="https://www.linkedin.com/in/devsantiago/">Santiago Gonzalez</a></p>
+        </div>
+    </footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
